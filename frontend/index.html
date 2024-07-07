@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/frontend/src/favicon.png" type="image/x-icon">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Youtube Video Downloader</title>
+</head>
+
+<body class="h-screen w-screen flex items-center flex-col">
+    <h1 class="text-4xl pt-14 text-green-500 font-extrabold">Youtube Video Downloader</h1>
+    <div class="w-full mt-52 flex flex-col items-center">
+        <input class="w-1/2 p-4 rounded-md text-lg" type="text" id="link" placeholder="Paste video url here...">
+        <div>
+            <button
+                class="text-white bg-green-500 p-5 text-2xl font-bold mt-10 rounded-xl hover:bg-green-400 hover:scale-105 transition"
+                onclick="sendData()">Download</button>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
