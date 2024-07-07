@@ -9,13 +9,26 @@
     <title>Youtube Video Downloader</title>
 </head>
 
-<body class="h-screen w-screen flex items-center flex-col">
-    <h1 class="text-4xl pt-14 text-green-500 font-extrabold">Youtube Video Downloader</h1>
-    <div class="w-full mt-52 flex flex-col items-center">
-        <input class="w-1/2 p-4 rounded-md text-lg" type="text" id="link" placeholder="Paste video url here...">
+<body class="h-screen w-screen flex flex-col">
+    <div class="p-10 flex items-center justify-between">
+        <div>
+            <h1 class="w-80 text-4xl py-3 px-3 text-white font-extrabold rounded-sm cursor-pointer">
+                TubeSaver</h1>
+        </div>
+        <div>
+            <ul class="flex gap-10 text-xl font-sans font-semibold pr-16 text-yellow-50">
+                <li class="cursor-pointer">Home</li>
+                <li class="cursor-pointer">Contact</li>
+                <li class="cursor-pointer">About</li>
+            </ul>
+        </div>
+    </div>
+    <div class="w-full mt-44 flex flex-col items-center">
+        <input class="w-1/2 p-4 rounded-md text-lg focus:bg-red-50 focus:outline-red-600" type="text" id="link"
+            placeholder="Paste video url here...">
         <div>
             <button
-                class="text-white bg-green-500 p-5 text-2xl font-bold mt-10 rounded-xl hover:bg-green-400 hover:scale-105 transition"
+                class="w-72 text-white bg-red-600 p-5 text-2xl font-bold mt-10 rounded-xl hover:bg-red-500 transition"
                 onclick="sendData()">Download</button>
         </div>
         <script src="script.js"></script>
