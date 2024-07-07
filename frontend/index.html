@@ -9,26 +9,26 @@
     <title>Youtube Video Downloader</title>
 </head>
 
-<body class="h-screen w-screen flex flex-col">
-    <div class="p-10 flex items-center justify-between">
+<body class="sm:h-screen h-[93vh] w-screen flex flex-col">
+    <div class="sm:p-8 px-3 py-6 flex items-center justify-between">
         <div>
-            <h1 class="w-80 text-4xl py-3 px-3 text-white font-extrabold rounded-sm cursor-pointer">
+            <h1 class="w-80 text-3xl py-2 px-3 text-white font-extrabold rounded-sm cursor-pointer">
                 TubeSaver</h1>
         </div>
-        <div>
-            <ul class="flex gap-10 text-xl font-sans font-semibold pr-16 text-yellow-50">
+        <div class="hidden sm:block">
+            <ul class="flex gap-10 text-xl font-sans font-semibold pr-16 text-yellow-50 ">
                 <li class="cursor-pointer">Home</li>
                 <li class="cursor-pointer">Contact</li>
                 <li class="cursor-pointer">About</li>
             </ul>
         </div>
     </div>
-    <div class="w-full mt-44 flex flex-col items-center">
-        <input class="w-1/2 p-4 rounded-md text-lg focus:bg-red-50 focus:outline-red-600" type="text" id="link"
-            placeholder="Paste video url here...">
+    <div class="w-full sm:mt-36 mt-36 flex flex-col items-center">
+        <input class="sm:w-1/2 w-9/12 p-3 rounded-md text-lg focus:bg-red-50 focus:outline-red-600" type="text"
+            id="link" placeholder="Paste video url here...">
         <div>
             <button
-                class="w-72 text-white bg-red-600 p-5 text-2xl font-bold mt-10 rounded-xl hover:bg-red-500 transition"
+                class="sm:w-72 w-40 text-white bg-red-600 sm:p-4 p-3 text-2xl font-bold mt-10 rounded-xl hover:bg-red-500 transition"
                 onclick="sendData()">Download</button>
         </div>
         <script src="script.js"></script>

@@ -8,3 +8,10 @@ body {
     background-size: cover;
     font-family: sans-serif;
 }
+
+@media screen and (max-width:640px) {
+    body {
+        background: url(peakpx.jpg);
+        background-size: 100%;
+    }
+}
